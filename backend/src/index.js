@@ -23,7 +23,8 @@ app.use(cookieParser()); //allows parsing of cookies
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: ["http://localhost:5173",
+    "https://nexus-chat-app-seven.vercel.app/login"],
     credentials: true,
   })
 );
